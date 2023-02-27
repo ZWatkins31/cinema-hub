@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Cinema Hub</title>
+</head>
+
+<div id="color-mode" class="color-mode">
+    <button id="color-mode" class="color-mode">
+        <!-- Light mode -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(214, 214, 214, 0.7)"
+            class="bi bi-moon-fill dark-mode-icon" id="dark-mode-icon"
+            viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="rgba(214, 214, 214, 0.7)"
+            class="light-mode-icon bi bi-brightness-high" id="light-mode-icon"
+            viewBox="0 0 16 16">
+            <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </svg>
+    </button>
+</div>
+<body id="main-container">
+
+    <div id="cinema-hub">
+        <div class="movie-container">
+            
+            
+            <h1 style="font-family: 'Limelight', cursive; font-size: 36px;">Cinema Hub</h1>
+            <label class="normal-text">Featured</label>
+            <div class="featured-movies-container">
+                <div class="featured-movie-images">
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp10255155.jpg" alt="">
+                    
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp7665395.jpg" alt="">
+                
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp8742047.jpg" alt="">
+                
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp5784421.jpg" alt="">
+                </div>
+
+                <div class="featured-movie-images">
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp4606361.jpg" alt="">
+                    
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2220225.jpg" alt="">
+
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp5297073.jpg" alt="">
+                
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2283499.jpg" alt="">
+                    </div>
+
+                <div class="featured-movie-images">
+                <!-- spider man -->
+                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp3816715.jpg" alt="">
+                    
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp4119896.jpg" alt="">
+                
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2900730.jpg" alt="">
+                
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp10473769.jpg" alt="">
+                </div>
+
+            </div>
+            <label class="normal-text">Choose a Movie</label>
+            <h3 id="date" class="smaller-text"></h3>
+            <select id="movie">
+                <option value="10">Encanto</option>
+                <option value="12">Pulp Fiction</option>
+                <option value="8">Harry Potter an the Sorcerer's Stone</option>
+                <option value="9">The Batman</option>
+                <option value="10">Avengers</option>
+                <option value="12">The Breakfast Club</option>
+                <option value="8">Avengers: Infinite War</option>
+                <option value="9">The Incredibles</option>
+                <option value="10">The Lion King</option>
+                <option value="12">Jurassic Park</option>
+                <option value="8">Jaws</option>
+            </select>
+            </div>
+            
+            <ul class="showcase">
+                <li>
+                    <div class="showcase-seat available"></div>
+                    <h6 id="showcase-text">Available</h6>
+                </li>
+                <li>
+                    <div class="showcase-seat selected"></div>
+                    <h6 id="showcase-text">Selected</h6>
+                </li>
+                <li>
+                    <div class="showcase-seat occupied"></div>
+                    <h6 id="showcase-text">Occupied</h6>
+                </li>
+            </ul>
+            
+            <div class="container">
+                <div class="screen"></div>
+            
+                <div class="row">
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                </div>
+                <div class="row">
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                </div>
+                <div class="row">
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                </div>
+                <div class="row">
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                </div>
+                <div class="row">
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                </div>
+                <div class="row">
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat"></div>
+                </div>
+            
+                <p class="text">
+                <h4 class="order-summary-text normal-text">Tickets:&nbsp<span id="count">0</span></h6>
+                    <h4 class="order-summary-text normal-text">Admission Fee: &nbsp $<span id="total">0</span></h4>
+                    </p>
+                <div class="unplaced-order">
+                    <button id="place-order" class="place-order-button normal-text">Place
+                        Order</button>
+                </div>
+        </div>
+
+    </div>
+    <div id="confirm-order-message" class="order-message normal-text">
+        <h2>Order placed successfully</h2>
+        <h4>Enjoy the show!</h4>
+        <h5 onclick="window.location.reload()">Close</h5>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

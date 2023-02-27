@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 1px; 
+  z-index: 2;
+  background-color: #07033a;
+  color: #fff;
+  overflow-y: scroll;
+  font-family: 'Inter';
+
+}
+
+svg {
+  margin: 5px;
+}
+
+.cinema-hub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-mode {
+  text-align: end !important;
+  background-color: transparent;
+  border: none;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.moon {
+    position: absolute;
+    inset: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+label {
+  font-size: 32px;
+  margin-bottom: 20px !important;
+  margin-top: 30px;
+}
+
+p.text {
+  margin-top: 5px;
+}
+
+p.text span {
+  color: rgb(255, 0, 242) !important;
+}
+
+.header {
+  margin-top: 32px;
+  font-size: 52px;
+  
+}
+
+select {
+  padding: 8px 0px 8px 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 950px;
+}
+
+
+.normal-text {
+  font-family: 'Inter';
+  font-size: 24px;
+};
+
+.smaller-text {
+  font-size: 14px;
+}
+
+.theater-text{
+  font-family: 'Limelight', cursive !important;
+  font-weight: bold;
+  font-size: 52px !important;
+};
+
+
+.featured-movie-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 20px;
+}
+
+.featured-movies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featured-movie-image {
+    width: 300px;
+    height: 425px;
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+  background-color: #fff;
+  padding: 110px 150px;
+  border-radius: 3px;
+  transform: rotateX(-45deg);
+  box-shadow: 1px 2px 2px 2px rgba(214, 214, 214, 0.7);
+}
+
+.movie-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-container label {
+  margin-bottom: 10px;
+}
+
+.showcase {
+  padding: 0 10px;
+  border-radius: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.showcase li {
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.seat {
+  box-shadow: 1px 1px 1px 1px rgb(212, 212, 212);
+  background-color: rgb(255, 255, 255);
+  height: 18px;
+  width: 20px;
+  margin: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.showcase-seat {
+  display: flex;
+  background-color: #fff;
+  height: 16px;
+  width: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-top: 22px;
+  margin-right: 10px;
+}
+
+.showcase-text {
+  color: #fff;
+}
+
+.occupied {
+  display: flex;
+  background-color: #474747;
+  opacity: 0.75;
+  box-shadow: none !important;
+  box-shadow: 1px 1px 1px #474747 !important;
+}
+
+.available {
+  background-color: gray;
+}
+
+.selected {  
+  box-shadow: 1px 1px 1px #D2042D !important;
+  background-color: #D2042D;
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.order-summary-text {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.place-order-button {
+  background-color: red;
+  color: #fff;
+  padding: 12px 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 42px;
+  font-weight: bold;
+}
+
+.order-placed-button {
+  visibility: hidden;
+}
+
+.order-message {
+  color: transparent;
+}
+
+.close-order-message-button {
+  color: #fff;
+  background-color: #D2042D;
+  padding: 12px 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 42px;
+  font-weight: bold;
+}
+
+.order-confirmation-message {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  padding: 25px;
+  margin: 25px;
+  background-color: #fff;
+  /* margin-top: 100px; */
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7) !important;
+}
+
+.close-order-confirmation-message {
+  color: #fff;
+  background-color: #D2042D;
+  padding: 12px 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 42px;
+  font-weight: bold;
+}
